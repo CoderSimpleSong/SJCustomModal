@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xN8-hG-SRa"/>
+                        <viewControllerLayoutGuide type="bottom" id="7dv-Qc-rYE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oo-hC-2zR">
+                                <rect key="frame" x="147.5" y="188.5" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KFj-sr-aOf"/>
+                                    <constraint firstAttribute="width" constant="80" id="Zfc-HM-SiL"/>
+                                </constraints>
+                                <state key="normal" title="从上方弹窗"/>
+                                <connections>
+                                    <action selector="fromTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AqE-cX-SXP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzN-No-Ddl">
+                                <rect key="frame" x="147.5" y="268.5" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Uy8-ic-bR1"/>
+                                    <constraint firstAttribute="height" constant="30" id="uWQ-eY-gG5"/>
+                                </constraints>
+                                <state key="normal" title="从下方弹窗"/>
+                                <connections>
+                                    <action selector="frmoDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJJ-kH-xrJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjm-5W-GVX">
+                                <rect key="frame" x="147.5" y="448.5" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Z9-sc-AAL"/>
+                                    <constraint firstAttribute="width" constant="80" id="49B-gM-7p2"/>
+                                </constraints>
+                                <state key="normal" title="从右方弹窗"/>
+                                <connections>
+                                    <action selector="frmoRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8y-Re-tm4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmY-hJ-zFi">
+                                <rect key="frame" x="147.5" y="368.5" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2ER-OQ-fGU"/>
+                                    <constraint firstAttribute="height" constant="30" id="bRq-bB-Drl"/>
+                                </constraints>
+                                <state key="normal" title="从左方弹窗"/>
+                                <connections>
+                                    <action selector="fromLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hdr-mF-1lS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gzN-No-Ddl" firstAttribute="width" secondItem="2Oo-hC-2zR" secondAttribute="width" id="2TV-Ib-9sk"/>
+                            <constraint firstItem="gzN-No-Ddl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="747-v6-pAc"/>
+                            <constraint firstItem="gzN-No-Ddl" firstAttribute="height" secondItem="2Oo-hC-2zR" secondAttribute="height" id="AoK-N7-1xK"/>
+                            <constraint firstItem="vmY-hJ-zFi" firstAttribute="height" secondItem="2Oo-hC-2zR" secondAttribute="height" id="CpI-NS-7jI"/>
+                            <constraint firstItem="vmY-hJ-zFi" firstAttribute="width" secondItem="2Oo-hC-2zR" secondAttribute="width" id="DRv-0Y-26O"/>
+                            <constraint firstItem="Yjm-5W-GVX" firstAttribute="height" secondItem="2Oo-hC-2zR" secondAttribute="height" id="ExU-Xr-4Hf"/>
+                            <constraint firstItem="Yjm-5W-GVX" firstAttribute="top" secondItem="vmY-hJ-zFi" secondAttribute="bottom" constant="50" id="Iea-iL-gMA"/>
+                            <constraint firstItem="vmY-hJ-zFi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfU-0C-oco"/>
+                            <constraint firstItem="Yjm-5W-GVX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Itt-TH-VTh"/>
+                            <constraint firstItem="gzN-No-Ddl" firstAttribute="top" secondItem="2Oo-hC-2zR" secondAttribute="bottom" constant="50" id="P1p-Dn-bhy"/>
+                            <constraint firstItem="2Oo-hC-2zR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q78-1f-Ca7"/>
+                            <constraint firstItem="vmY-hJ-zFi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="bI9-ZQ-icF"/>
+                            <constraint firstItem="Yjm-5W-GVX" firstAttribute="width" secondItem="2Oo-hC-2zR" secondAttribute="width" id="gHH-70-Wof"/>
+                            <constraint firstItem="gzN-No-Ddl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMO-bJ-Y3C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
